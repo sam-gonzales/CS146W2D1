@@ -7,8 +7,9 @@ public class lomutoTests {
     void lomutoTestA(){
         int [] arr = {10, 17, 19, 21, 44, 55, 57, 63, 65, 67};
 
-        int [] expected = {}; // add
-        int [] result = App.lomuto(arr); 
+        int [] expected = {10, 17, 19, 21, 44, 55, 57, 63, 65, 67}; // add
+        App.lomuto(arr); 
+        int [] result = arr;
 
         assertArrayEquals(expected, result);
 
@@ -19,7 +20,8 @@ public class lomutoTests {
         int [] emptyArr = {};
 
         int [] expected = {};
-        int [] result = App.lomuto(emptyArr);
+        App.lomuto(emptyArr);
+        int [] result = emptyArr;
 
         assertArrayEquals(expected, result);
     }
@@ -28,7 +30,10 @@ public class lomutoTests {
     void lomutoTestC(){
         int [] arr = {84, 3, 7, 1, 9, 6, 2, 5};
 
-        int [] expected = {};
-        int [] result = App.lomuto(arr);
+        int [] expected = {3, 1, 2, 5, 9, 6, 7, 84};
+        App.lomuto(arr);
+        int [] result = arr;
+
+        assertArrayEquals(expected, result);
     }
 }
