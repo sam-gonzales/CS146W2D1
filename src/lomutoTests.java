@@ -7,7 +7,7 @@ public class lomutoTests {
     void lomutoTestA(){
         int [] arr = {10, 17, 19, 21, 44, 55, 57, 63, 65, 67};
 
-        int [] expected = {10, 17, 19, 21, 44, 55, 57, 63, 65, 67}; // add
+        int [] expected = {10, 17, 19, 21, 44, 55, 57, 63, 65, 67}; 
         App.lomuto(arr); 
         int [] result = arr;
 
